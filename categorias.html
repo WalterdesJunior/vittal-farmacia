@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vittal Farmácia e Manipulação — Categorias">
+  <title>Categorias — Vittal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="img/vittal-tree.png" alt="">
+        </span>
+        <span class="brand-text">
+          <img class="brand-word" src="img/vittal-wordmark.png" alt="vittal">
+          <small>FARMÁCIA E MANIPULAÇÃO</small>
+        </span>
+      </a>
+
+      <div class="search">
+        <input id="searchInput" type="search" placeholder="O que você está procurando?" aria-label="Pesquisar produtos">
+        <button aria-label="Pesquisar" id="searchBtn">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="header-info">
+        <div class="info-item">
+          <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <div><b>Nossa Localização</b><span>Av. Dom Severino, Dirceu...</span></div>
+        </div>
+        <div class="info-item">
+          <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3.5 2"/></svg></span>
+          <div><b>Horário de Atendimento</b><span>Seg a Sáb · 7h às 22h</span></div>
+        </div>
+        <div class="info-item account">
+          <span class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20c1.4-3.7 4.4-5.6 7.5-5.6s6.1 1.9 7.5 5.6"/></svg></span>
+          <div><b>Minha Conta</b><span>Entrar / Cadastrar</span></div>
+        </div>
+      </div>
+
+      <a class="cart-link" href="carrinho.html" aria-label="Carrinho de compras">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2.4l2.1 11.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navrow">
+      <div class="container nav-inner">
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre Nós</a>
+          <a href="manipulados.html">Manipulados</a>
+          <a class="active" href="categorias.html">Categorias <span>⌄</span></a>
+          <a href="index.html#ofertas">Ofertas</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+        <a class="whatsapp" href="https://wa.me/5586999999999" target="_blank" rel="noopener"><svg class="ico-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.14.82.84-3.06-.19-.32a8.09 8.09 0 0 1-1.24-4.32c0-4.48 3.65-8.13 8.14-8.13 2.17 0 4.21.85 5.75 2.38a8.07 8.07 0 0 1 2.38 5.75c0 4.49-3.65 8.14-8.1 8.14Zm4.47-6.09c-.24-.12-1.44-.71-1.67-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.42-.55-.42-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.36.99 2.52c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg> Fale Conosco</a>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <div class="mobile-nav-head">
+      <span class="mobile-nav-brand"><img src="img/vittal-tree.png" alt="" width="20" height="20"><span>vittal</span></span>
+      <button class="mobile-nav-close" id="mobileNavClose" aria-label="Fechar menu">&#10005;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="manipulados.html">Manipulados</a>
+      <a class="active" href="categorias.html">Categorias</a>
+      <a href="index.html#ofertas">Ofertas</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <a class="mobile-nav-whatsapp" href="https://wa.me/5586999999999" target="_blank" rel="noopener"><svg class="ico-whatsapp" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.47 1.29 4.93L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm0 18.02h-.01a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-3.14.82.84-3.06-.19-.32a8.09 8.09 0 0 1-1.24-4.32c0-4.48 3.65-8.13 8.14-8.13 2.17 0 4.21.85 5.75 2.38a8.07 8.07 0 0 1 2.38 5.75c0 4.49-3.65 8.14-8.1 8.14Zm4.47-6.09c-.24-.12-1.44-.71-1.67-.79-.22-.08-.38-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.53.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.44-1.35-1.68-.14-.24-.02-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.42-.55-.42-.14-.01-.3-.01-.46-.01-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.36.99 2.52c.12.16 1.71 2.61 4.14 3.66.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg> Fale Conosco</a>
+    <div class="mobile-nav-info">
+      <div class="mobile-nav-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13Z"/><circle cx="12" cy="9" r="2.5"/></svg><div><b>Nossa Localização</b><span>Av. Dom Severino, Dirceu...</span></div></div>
+      <div class="mobile-nav-info-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7.5v5l3.5 2"/></svg><div><b>Horário de Atendimento</b><span>Seg a Sáb · 7h às 22h</span></div></div>
+    </div>
+  </nav>
+
+
+  <main>
+    <section class="pagehead">
+      <div class="pagehead-bg"></div>
+      <div class="pagehead-overlay"></div>
+      <div class="container pagehead-content">
+        <div class="breadcrumb"><a href="index.html">Início</a><span>/</span><span>Categorias</span></div>
+        <h1>Categorias</h1>
+        <p>Tudo o que você precisa, em um só lugar.</p>
+      </div>
+    </section>
+
+    <div class="container category-page">
+      <aside class="cat-sidebar">
+        <h3>Categorias</h3>
+        <nav id="catNav">
+          <a href="#all" data-cat="all" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Todos os produtos</a>
+          <a href="#medicamentos" data-cat="medicamentos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 17.5a5 5 0 0 1 0-7.07l4-4a5 5 0 0 1 7.07 7.07l-4 4a5 5 0 0 1-7.07 0Z"/><path d="M9 9l6 6"/></svg>Medicamentos</a>
+          <a href="#manipulados" data-cat="manipulados"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12a7 7 0 0 0 14 0"/><path d="M3.5 12h17"/><path d="M9.5 12c0-3 .8-4.8 1.8-7"/><path d="M17 4.2 14 8.5"/></svg>Manipulados</a>
+          <a href="#dermocosmeticos" data-cat="dermocosmeticos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2s6 7 6 10.8a6 6 0 1 1-12 0c0-3.8 6-10.8 6-10.8Z"/></svg>Dermocosméticos</a>
+          <a href="#vitaminas" data-cat="vitaminas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="12" height="14" rx="2.5"/><path d="M9 7V4.5A1.5 1.5 0 0 1 10.5 3h3A1.5 1.5 0 0 1 15 4.5V7"/><path d="M6 12.5h12"/></svg>Vitaminas e Suplementos</a>
+          <a href="#pet" data-cat="pet"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="7" cy="8.3" r="2"/><circle cx="12" cy="6.2" r="2"/><circle cx="17" cy="8.3" r="2"/><path d="M12 11.8c-3.3 0-6 2-6 4.6 0 1.9 1.6 2.9 3.3 2.2.9-.4 1.8-.6 2.7-.6s1.8.2 2.7.6c1.7.7 3.3-.3 3.3-2.2 0-2.6-2.7-4.6-6-4.6Z"/></svg>Pet</a>
+          <a href="#higiene" data-cat="higiene"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2c.6 3.6 2 5.4 5.6 6C14 8.6 12.2 10.4 12 14c-.6-3.6-2-5.4-5.6-6C10 7.4 11.4 5.6 12 2Z"/><path d="M19 15c.3 1.8 1 2.5 2.8 2.8-1.8.3-2.5 1-2.8 2.8-.3-1.8-1-2.5-2.8-2.8 1.8-.3 2.5-1 2.8-2.8Z"/></svg>Higiene e Beleza</a>
+          <a href="#mae-bebe" data-cat="mae-bebe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5l1 3.2h-7L9.5 3Z"/><rect x="7.5" y="6.2" width="9" height="14.3" rx="3.2"/><path d="M7.5 12h9"/></svg>Mãe e Bebê</a>
+          <a href="#aparelhos" data-cat="aparelhos"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.2 6.5L13 6.5 15 12h6"/></svg>Aparelhos e Acessórios</a>
+        </nav>
+      </aside>
+
+      <div class="cat-content">
+        <div class="cat-toolbar">
+          <h2 id="catHeading">Todos os produtos<span id="catCount">16 produtos</span></h2>
+          <select class="sort-select" aria-label="Ordenar por">
+            <option>Ordenar por: Mais vendidos</option>
+            <option>Menor preço</option>
+            <option>Maior preço</option>
+            <option>Nome A-Z</option>
+          </select>
+        </div>
+
+        <div class="products cat-products">
+          <article class="product" data-cat="medicamentos">
+            <span class="discount">-30%</span>
+            <div class="product-image product-1"></div>
+            <div class="product-body">
+              <h3>Paracetamol 750mg</h3>
+              <p>com 20 comprimidos</p>
+              <div><strong>R$ 12,90</strong><del>R$ 18,50</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="medicamentos">
+            <span class="discount">-33%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 17.5a5 5 0 0 1 0-7.07l4-4a5 5 0 0 1 7.07 7.07l-4 4a5 5 0 0 1-7.07 0Z"/><path d="M9 9l6 6"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Dipirona Sódica 500mg</h3>
+              <p>com 30 comprimidos</p>
+              <div><strong>R$ 9,90</strong><del>R$ 14,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="manipulados">
+            <span class="discount">-25%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12a7 7 0 0 0 14 0"/><path d="M3.5 12h17"/><path d="M9.5 12c0-3 .8-4.8 1.8-7"/><path d="M17 4.2 14 8.5"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Fórmula Manipulada Ansiolítica</h3>
+              <p>com 30 cápsulas</p>
+              <div><strong>R$ 89,90</strong><del>R$ 119,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="manipulados">
+            <span class="discount">-22%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12a7 7 0 0 0 14 0"/><path d="M3.5 12h17"/><path d="M9.5 12c0-3 .8-4.8 1.8-7"/><path d="M17 4.2 14 8.5"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Cápsulas de Colágeno Manipulado</h3>
+              <p>com 60 cápsulas</p>
+              <div><strong>R$ 69,90</strong><del>R$ 89,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="dermocosmeticos">
+            <span class="discount">-15%</span>
+            <div class="product-image product-4"></div>
+            <div class="product-body">
+              <h3>Creme Hidratante CeraVe</h3>
+              <p>Pele Normal a Seca 454g</p>
+              <div><strong>R$ 69,90</strong><del>R$ 82,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="dermocosmeticos">
+            <span class="discount">-20%</span>
+            <div class="product-image product-3"></div>
+            <div class="product-body">
+              <h3>Protetor Solar FPS 50</h3>
+              <p>Neutrogena 200ml</p>
+              <div><strong>R$ 79,90</strong><del>R$ 99,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="vitaminas">
+            <span class="discount">-25%</span>
+            <div class="product-image product-2"></div>
+            <div class="product-body">
+              <h3>Vitamina D3 2000 UI</h3>
+              <p>com 60 cápsulas</p>
+              <div><strong>R$ 44,90</strong><del>R$ 59,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="vitaminas">
+            <span class="discount">-20%</span>
+            <div class="product-image product-5"></div>
+            <div class="product-body">
+              <h3>Ômega 3 1000mg</h3>
+              <p>com 60 cápsulas</p>
+              <div><strong>R$ 49,90</strong><del>R$ 62,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="pet">
+            <span class="discount">-16%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" fill="#fff" stroke="none"><circle cx="7" cy="8.3" r="2"/><circle cx="12" cy="6.2" r="2"/><circle cx="17" cy="8.3" r="2"/><path d="M12 11.8c-3.3 0-6 2-6 4.6 0 1.9 1.6 2.9 3.3 2.2.9-.4 1.8-.6 2.7-.6s1.8.2 2.7.6c1.7.7 3.3-.3 3.3-2.2 0-2.6-2.7-4.6-6-4.6Z"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Ração Premium Cães Adultos</h3>
+              <p>pacote 3kg</p>
+              <div><strong>R$ 79,90</strong><del>R$ 94,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="pet">
+            <span class="discount">-22%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" fill="#fff" stroke="none"><circle cx="7" cy="8.3" r="2"/><circle cx="12" cy="6.2" r="2"/><circle cx="17" cy="8.3" r="2"/><path d="M12 11.8c-3.3 0-6 2-6 4.6 0 1.9 1.6 2.9 3.3 2.2.9-.4 1.8-.6 2.7-.6s1.8.2 2.7.6c1.7.7 3.3-.3 3.3-2.2 0-2.6-2.7-4.6-6-4.6Z"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Shampoo Antipulgas Pet</h3>
+              <p>500ml</p>
+              <div><strong>R$ 34,90</strong><del>R$ 44,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="higiene">
+            <span class="discount">-20%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2s6 7 6 10.8a6 6 0 1 1-12 0c0-3.8 6-10.8 6-10.8Z"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Shampoo Anticaspa</h3>
+              <p>200ml</p>
+              <div><strong>R$ 39,90</strong><del>R$ 49,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="higiene">
+            <span class="discount">-24%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2s6 7 6 10.8a6 6 0 1 1-12 0c0-3.8 6-10.8 6-10.8Z"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Sabonete Líquido Íntimo</h3>
+              <p>250ml</p>
+              <div><strong>R$ 24,90</strong><del>R$ 32,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="mae-bebe">
+            <span class="discount">-26%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5l1 3.2h-7L9.5 3Z"/><rect x="7.5" y="6.2" width="9" height="14.3" rx="3.2"/><path d="M7.5 12h9"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Pomada para Assaduras</h3>
+              <p>45g</p>
+              <div><strong>R$ 19,90</strong><del>R$ 26,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="mae-bebe">
+            <span class="discount">-25%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 3h5l1 3.2h-7L9.5 3Z"/><rect x="7.5" y="6.2" width="9" height="14.3" rx="3.2"/><path d="M7.5 12h9"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Lenços Umedecidos</h3>
+              <p>pacote com 50 un.</p>
+              <div><strong>R$ 14,90</strong><del>R$ 19,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="aparelhos">
+            <span class="discount">-25%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.2 6.5L13 6.5 15 12h6"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Termômetro Digital</h3>
+              <p>uso clínico</p>
+              <div><strong>R$ 29,90</strong><del>R$ 39,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+
+          <article class="product" data-cat="aparelhos">
+            <span class="discount">-28%</span>
+            <div class="product-image product-illustrated"><svg viewBox="0 0 200 220"><rect x="14" y="14" width="172" height="192" rx="18" fill="#f2f3f4"/><path d="M14 32a18 18 0 0 1 18-18h136a18 18 0 0 1 18 18v46H14Z" fill="#ff6800"/><circle cx="100" cy="47" r="25" fill="rgba(255,255,255,.18)"/><g transform="translate(88,35)" stroke="#fff" stroke-width="1.7" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.2 6.5L13 6.5 15 12h6"/></g><rect x="34" y="102" width="132" height="10" rx="5" fill="#dde0e1"/><rect x="34" y="124" width="92" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="148" width="58" height="8" rx="4" fill="#c7cacc"/><rect x="34" y="176" width="54" height="16" rx="8" fill="#ff6800" opacity=".85"/></svg></div>
+            <div class="product-body">
+              <h3>Máscara Descartável Tripla</h3>
+              <p>caixa com 50 un.</p>
+              <div><strong>R$ 19,90</strong><del>R$ 27,90</del></div>
+              <button>Adicionar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contato">
+    <div class="container footer-inner">
+      <div><a class="brand footer-brand" href="index.html"><span class="brand-mark"><img src="img/vittal-tree.png" alt=""></span><img class="brand-word" src="img/vittal-wordmark.png" alt="vittal"></a><p>Cuidado, qualidade e saúde em um só lugar.</p></div>
+      <div><h4>Atendimento</h4><p>Seg a Sáb · 7h às 22h</p><p>WhatsApp e telefone</p></div>
+      <div><h4>Institucional</h4><p><a href="sobre.html">Sobre Nós</a></p><p><a href="contato.html">Contato</a></p></div>
+    </div>
+  </footer>
+
+  <a class="cart-fab" id="cartFab" href="carrinho.html" aria-label="Ver carrinho">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.4"/><circle cx="18" cy="21" r="1.4"/><path d="M2.5 3h2.4l2.1 11.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21 7H6"/></svg>
+    <span class="cart-fab-badge" id="cartFabBadge">0</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
